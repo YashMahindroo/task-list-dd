@@ -1,0 +1,61 @@
+/* src/styles.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Task list styles */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.task-block {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.task-block h2 {
+  margin-bottom: 10px;
+}
+
+.task {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+}
+
+/* Drag and drop styles */
+.draggable {
+  user-select: none;
+}
+
+.draggable:active {
+  opacity: 0.5;
+}
+
+.droppable {
+  min-height: 50px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.droppable:hover {
+  background-color: #f0f0f0;
+}
